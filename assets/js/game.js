@@ -104,8 +104,10 @@ var startGame = function(){
     // reset player stats
     playerInfo.reset();
 
-    
+    // for loop to circle through the enemy robots.
     for (var i = 0; i < enemyInfo.length; i++){
+
+        // if player has health alert with welcome message.
         if (playerInfo.health > 0) {
             window.alert("Welcome To Robot Gladiators! " + (i + 1));
 
@@ -229,11 +231,13 @@ var playerInfo = {
     health: 100,
     attack: 10, 
     money: 10,
+
     reset: function(){
        this.health = 100;
        this.money = 10;
        this.attack = 10;
     },
+
     refillHealth: function(){
 
         if (this.money >= 7){
