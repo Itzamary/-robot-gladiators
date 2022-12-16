@@ -3,13 +3,8 @@ var fightOrSkip = function(){
     // ask player if they'd like to fight or skip using fightOrSkip function
     var promptFight = window.prompt('Would you like to FIGHT or SKIP this battle? Enter "FIGHT" or "SKIP" to choose.');
 
-    // Enter the conditional recursive function call here!
-    if (promptFight === "" || promptFight === null) {
-        window.alert("You need to provide a valid answer! Please try again.");
-        return fightOrSkip();
-    }
-    
-     promptFight = promptFight.toLowerCase();
+    promptFight = promptFight.toLowerCase();
+
     // if player picks 'skip' confirm and then stop the loop
     if (promptFight === "skip"){
         //confirm the player wants to skip
@@ -24,8 +19,15 @@ var fightOrSkip = function(){
             // return true of player wants to leave
             return true;
         }
+    } else if (promptFight === 'fight') {
+       return false; 
+    } else {
+
+        // recursive function call if the user doesn’t  type the necessary text.
+        window.alert("You need to provide a valid answer! Please try again.");
+        return fightOrSkip();
     }
-    return false;
+    
 }
 
 
