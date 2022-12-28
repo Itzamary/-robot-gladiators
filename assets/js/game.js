@@ -111,7 +111,7 @@ var startGame = function(){
 
         // if player has health alert with welcome message.
         if (playerInfo.health > 0) {
-            window.alert("Welcome To Robot Gladiators! " + (i + 1));
+            window.alert("Welcome To Robot Gladiators! Round " + (i + 1));
 
             var pickedEnemyObj = enemyInfo[i];
             pickedEnemyObj.health = randomNumber(40, 60);
