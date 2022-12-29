@@ -1,7 +1,7 @@
 # -robot-gladiators
 
 ## Purpose
-In this project we learn to use JavaScrpt by creating a game that propmpts a user for a charachters name and then proceeds to ask if you will fight or skip. after making a choice a random amount of points are withdrawn from each fighter and Roborto the AI, untill one looses. 
+In this project we learn to use JavaScript by creating a game using basic functions and objects. The user is prompted for a character’s name and then proceeds to ask if you will fight or skip. after making a choice, a random amount of points are withdrawn from both the user and the computer, until one looses.
 
 
 ## Instructions
